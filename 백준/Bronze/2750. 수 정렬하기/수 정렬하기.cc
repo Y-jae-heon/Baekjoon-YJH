@@ -18,7 +18,7 @@ int sort(int num[], int tc) {
         {
             num[j+1] = num[j];
         }
-        
+        // j는 i-1의 -- 가 된 상태임으로 j-1이 들고있던 값을 j-1--로 key값을 옮겨줌
         num[j+1] = key;
     }
     
