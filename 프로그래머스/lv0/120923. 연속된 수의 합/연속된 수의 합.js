@@ -15,3 +15,11 @@ function solution(num, total) {
     }
     return answer;
 }
+
+function solution2(num, total) {
+    // 소수점 없애고 min 값 구하기
+    const a = (2 * total / num + 1 - num) / 2;
+    return Array(num).fill().map((_, i) => {
+        return i + a
+    })
+}
