@@ -1,0 +1,1 @@
+const solution = (str => new Array(...str.toLowerCase()).sort().join(""));
