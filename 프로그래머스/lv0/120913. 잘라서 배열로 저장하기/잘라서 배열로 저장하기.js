@@ -1,7 +1,5 @@
 function solution(my_str, n) {
     var answer = [];
-    for (let i = 0; i < Math.ceil(my_str.length/n); i++) {
-        answer.push(my_str.slice(i*n,n*(i+1)));
-    }
+    for (let i = 0; i < my_str.length; i+=n) answer.push(my_str.slice(i, i+n)); 
     return answer;
 }
