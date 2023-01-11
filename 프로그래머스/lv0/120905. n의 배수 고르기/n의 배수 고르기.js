@@ -1,0 +1,1 @@
+const solution = (n, num) => num.filter((a,i) => a%n == 0);
