@@ -1,7 +1,1 @@
-function solution(n) {
-    var answer = 0;
-    for (let w of String(n)) {
-        answer+=Number(w);
-    }
-    return answer;
-}
+const solution = (n) => String(n).split("").reduce((a,c) => a + Number(c), 0);
