@@ -1,10 +1,5 @@
 function solution(str) {
-    str = Array(...str).map((x,i) => {
-        if(x === str[i].toUpperCase()){
-            return x.toLowerCase();
-        }else{
-            return x.toUpperCase();
-        }
-    }).join("");
-    return str;
+    var answer = '';
+    for (let c of str) answer += c === c.toLowerCase() ? c.toUpperCase() : c.toLowerCase();
+    return answer;
 }
