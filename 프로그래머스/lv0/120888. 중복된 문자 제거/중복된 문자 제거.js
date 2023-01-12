@@ -1,0 +1,1 @@
+const solution = (str) => [...str].filter((x,i) => i === str.indexOf(x)).join("");
