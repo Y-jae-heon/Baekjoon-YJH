@@ -1,0 +1,1 @@
+const solution = (ci , code) => Array(...ci).filter((x,i) => (i+1)%code === 0).join("");
