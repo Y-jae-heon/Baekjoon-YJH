@@ -12,3 +12,7 @@ function solution(numlist, n) {
 
     return answer.map(x => x.num);
 }
+
+function solution2(numlist, n) {
+  return numlist.sort((a, b) => Math.abs(a - n) - Math.abs(b - n) || b - a);
+}
