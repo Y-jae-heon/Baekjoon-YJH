@@ -1,3 +1,4 @@
 function solution(sides) {
-    return Math.min(...sides)*2-1
+    var answer = Math.min(...sides)*2-1;
+    return answer;
 }
