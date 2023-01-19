@@ -1,5 +1,1 @@
-function solution(n) {
-  return [...Array(n * 3)]
-    .map((_, i) => i + 1)
-    .filter((num) => num % 3 !== 0 && !num.toString().includes("3"))[n - 1];
-}
+var solution=n=>[...new Array(1000).keys()].filter(i=>i%3&&!/3/.test(i))[n-1]
