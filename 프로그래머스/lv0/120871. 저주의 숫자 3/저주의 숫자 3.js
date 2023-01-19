@@ -1,10 +1,6 @@
 function solution(n) {
-    var answer = 0;
-    var i = 0;
-    while (i < n) {
-        if(!(answer).toString().includes('3')) {i++; answer++};
-        if((answer).toString().includes('3')) answer++;
-        if(answer%3 === 0) answer++;
-    }
-    return answer;
+    let arr = [];
+    let num = 0;
+    while (arr.length !== n && ++num) if (num%3!==0 && !(''+num).includes('3')) arr.push(num);
+    return arr.pop();
 }
