@@ -1,1 +1,10 @@
-var solution=n=>[...new Array(1000).keys()].filter(i=>i%3&&!/3/.test(i))[n-1]
+function solution(n) {
+    var answer = 0;
+    var i = 0;
+    while (i < n) {
+        if(!(answer).toString().includes('3')) {i++; answer++};
+        if((answer).toString().includes('3')) answer++;
+        if(answer%3 === 0) answer++;
+    }
+    return answer;
+}
